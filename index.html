@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Daniel Fast</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320--> 
+		
+		
+		<link rel="stylesheet" href="jquery.mobile-1.4.1.min.css" />
+		
+		<script src="local:///chrome/webworks.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			/*global window, document, blackberry */
+
+			window.addEventListener('load', function onload() {
+				document.addEventListener('webworksready', function onwebworksready() {
+					blackberry.ui.cover.setContent(blackberry.ui.cover.TYPE_IMAGE, {
+					path: 'local:///images/cover.png'
+					});
+					setTimeout(function(){
+					blackberry.ui.cover.updateCover();
+					}, 0);
+				}, false);
+			}, false);
+		</script>
+				
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="jquery.mobile-1.4.1.min.js"></script>
+
+		
+	</head> 
+	<body>
+		<div data-role="page">
+			<div data-role="header" data-theme="b">
+				<h1>Daniel Fast</h1>
+			</div>
+			
+			<div data-role="content" >
+				<ul data-role="listview"  data-theme="d">
+					<li>
+						<a href="tips.html" data-transition="slide" >
+							<img src="images/tipjar.jpg" />
+							<h3>Tips</h3>
+							<p>Tips for a great fast</p>
+						</a>
+					</li>
+					<li>
+						<a href="breakfast.html" data-transition="slide">
+							<img src="images/breakfast.jpg" />
+							<h3>Breakfast</h3>
+							<p>Creative Breakfast items for Daniel Fast</p>
+						</a>
+					</li>
+					<li>
+						<a href="lunchdinner.html" data-transition="slide">
+							<img src="images/dinner.jpg" />
+							<h3>Lunch/Dinner</h3>
+							<p>Delicious Lunch or Dinner items for Daniel Fast</p>
+						</a>
+					</li>
+					<li>
+						<a href="snacks.html" data-transition="slide">
+							<img src="images/snacks.jpg" />
+							<h3>Snacks</h3>
+							<p>Snacks for the in-between times</p>
+						</a>
+					</li>
+					<li>
+						<a href="fastfood.html" data-transition="slide">
+							<img src="images/fastfood.jpg" />
+							<h3>Eating on the Go</h3>
+							<p>Places to eat when out</p>
+						</a>
+					</li>
+				</ul>
+			</div><!-- /content -->
+		</div><!-- /page -->
+
+		
+	</body>
+</html>
